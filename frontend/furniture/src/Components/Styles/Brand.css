@@ -1,0 +1,16 @@
+
+.brands-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,auto));
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.brands-container img{
+    width: 100px;
+    transition: transform 2s ease-in-out;
+}
+.brands-container img:hover{
+    filter: grayscale(1);
+}

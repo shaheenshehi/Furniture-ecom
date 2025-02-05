@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+}
+:root{
+    --text-color:#000000;
+    --main-color:#83b735;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 100px;
+    background: #edecea;
+
+}
+
+section{
+    padding: 50px 10%;
+}
+
+
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible column sizing */
+    gap: 30px; 
+    padding:10px; 
+    justify-content: center;
+    
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.25);
+   
+  }
+  
+  .footer-box {
+    padding: 20px;
+    max-width: 400px; 
+  
+  }
+  
+  .footer-box h2 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+  
+  .footer-box p {
+    margin: 8px 0;
+    font-size: 0.9rem;
+    line-height: 1.5; 
+  }
+
+
+
+  /* responsive */
+
+@media(max-width:991px) {
+    header{
+        padding: 18px 4%;
+    }
+    section{
+        padding: 50px 4%;
+    }
+    
+}
+
+@media(max-width:891px) {
+   .home-text h1{
+    font-size: 2rem;
+   }
+    .shop-container,.new-container{
+        grid-template-columns: auto auto
+}
+.box{
+  
+    max-width:14rem;
+    max-height: 22rem;
+}
+.box-img {
+    
+    height: 260px; 
+
+}
+
+.box-img img{
+    max-width: 14rem;
+   
+}
+.title-price{
+  
+    padding:12px;
+}
+.title-price h3{
+    font-size: 0.7rem;
+    font-weight: 600;
+    
+}
+.box span{
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left: 12px;
+    color: var(--main-color);
+}
+.stars {
+   
+    font-size: 0.7rem;
+}
+
+
+.cart-icon{
+    
+    font-size: 13px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Flexible column sizing */
+    gap: 20px; 
+    padding:10px; 
+    justify-content: center;
+    
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.25);
+   
+  }
+  
+  .footer-box {
+    padding: 20px;
+    max-width: 400px; 
+   
+  
+  }
+  
+  .footer-box h2 {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+  }
+  
+  .footer-box p {
+    margin: 8px 0;
+    font-size: 0.7rem;
+    line-height: 1.5; 
+  }
+
+
+}
+
+@media(max-width:1151px){
+    .footer{
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));   
+    }
+}
+@media(max-width:709px){
+    .footer{
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));   
+    }
+}

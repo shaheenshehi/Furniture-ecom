@@ -1,0 +1,113 @@
+/* Home Section */
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns text to the left on desktop */
+    padding: 2rem 5rem; /* Adds left padding for better spacing */
+    text-align: left;
+}
+
+/* Text Content */
+.home-text {
+    max-width: 800px;
+}
+
+/* Main Heading */
+.home-text h1 {
+    font-size: 2.7rem;
+    line-height: 1.2;
+}
+
+/* Highlighted Span */
+.home-text span {
+    color: var(--main-color);
+}
+
+/* Paragraph */
+.home-text p {
+    font-size: 1rem;
+    margin: 0.5rem 0 1.8rem;
+    max-width: 40rem;
+}
+
+/* Shop Now Button */
+.btn {
+    padding: 10px 14px;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 0.3rem;
+    font-size: 14px;
+    transition: 0.2s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #8fc53d;
+}
+
+/* ✅ Responsive Design */
+@media screen and (max-width: 1024px) {
+    .home {
+        justify-content: center; /* Centers text on smaller screens */
+        padding: 4rem 2rem;
+        text-align: center;
+    }
+
+    .home-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .home-text p {
+        font-size: 0.9rem;
+        max-width: 35rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 1.5rem;
+    }
+
+    .home-text h1 {
+        font-size: 2rem;
+    }
+
+    .home-text p {
+        font-size: 0.875rem;
+        max-width: 30rem;
+    }
+
+    .btn {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home {
+        padding: 2rem 1rem;
+    }
+
+    .home-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-text p {
+        font-size: 0.85rem;
+        max-width: 100%;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 7px 10px;
+    }
+}

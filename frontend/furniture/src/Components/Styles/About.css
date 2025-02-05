@@ -1,0 +1,25 @@
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin-top: 5rem;
+    
+}
+
+.about-img img{
+    width: 80%;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    border-radius: 8px;
+}
+
+.about-text span{
+    color: var(--main-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.about-text p{
+    font-size: 0.938rem;
+    margin: 0.5rem 0 1.4rem;
+}

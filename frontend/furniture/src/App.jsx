@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './Components/Furn.css';
+import './Components/Styles/Furn.css';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import Shop from './Components/Shop';
@@ -10,9 +10,11 @@ import { Brand } from './Components/Brand';
 import { Contact } from './Components/Contact';
 import { Footer } from './Components/Footer';
 import { Login } from './Components/Login';
+import { CartProvider } from './Context/CartContext';
 
 const App = () => {
   return (
+    <CartProvider>
     <Router>
       <div>
         <Navbar />
@@ -28,6 +30,7 @@ const App = () => {
         <Footer /> 
       </div>
     </Router>
+    </CartProvider>
   );
 };
 

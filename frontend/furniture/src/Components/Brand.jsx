@@ -1,4 +1,5 @@
 import React from 'react'
+import './Styles/Brand.css'
 
 export const Brand = () => {
   return (

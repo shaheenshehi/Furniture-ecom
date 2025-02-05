@@ -1,6 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faStar,faStarHalfStroke,faCartShopping} from '@fortawesome/free-solid-svg-icons'
+import './Styles/NewCollection.css'
+
 
 export const NewCollection = () => {
   return (

@@ -1,4 +1,5 @@
 import React from 'react'
+import './Styles/Home.css'
 
 const Home = () => {
   return (
@@ -6,7 +7,8 @@ const Home = () => {
          <section className='home' id='home'>
     <div className="home-text">
       <h1><span>Make </span>Your Comfort <br/>Is Our<span> Happiness</span></h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae cum aspernatur cumque eveniet in. Tenetur ullam harum sint necessitatibus est architecto rem maxime et, qui sit voluptates voluptatem, odio vitae!</p>
+      <p>
+      Discover a stunning collection of high-quality furniture designed to transform your home. From elegant sofas to stylish dining sets, we bring you the perfect blend of craftsmanship and modern design. Whether you're looking for timeless classics or trendy statement pieces, our curated selection ensures comfort, durability, and sophistication. Shop now and create a space that reflects your style!</p>
       <a href="/shop" className='btn'> Shop now</a>
     </div>
     </section>
